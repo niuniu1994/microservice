@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 1004
+
+  #      192.168.1.31 should be replaced by kafka broker ip in kubernetes or your local computer ip when test local
+client:
+  user: ${EUREKA_USER_CLIENT:http://192.168.1.31:1002}
+  book: ${EUREKA_BOOK_CLIENT:http://192.168.1.31:1005}
+
+logging:
+  kafka:
+    host: ${KAFKA_HOST:192.168.1.31:9092}
+
+
+eureka:
+  client:
+    service-url:
+      #      192.168.1.31 should be replaced by kafka broker ip in kubernetes or your local computer ip when test local
+      defaultZone:  ${EUREKA_SERVER:http://192.168.1.31:1001/eureka/}
