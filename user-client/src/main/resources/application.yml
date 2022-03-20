@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-client
+  datasource:
+    url: jdbc:mysql://elib.ckb2dzhidhpk.eu-central-1.rds.amazonaws.com:3306/elib
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: mysqladmin
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 1002
+
+logging:
+  kafka:
+    host: ${KAFKA_HOST:192.168.1.31:9092}
+
+eureka:
+  client:
+    service-url:
+#      192.168.1.31 should be replaced by kafka broker ip in kubernetes or your local computer ip when test local
+      defaultZone: ${EUREKA_SERVER:http://192.168.1.31:1001/eureka/}
+    instance:
+      lease-renewal-interval-in-seconds: 5
+      lease-expiration-duration-in-seconds: 10
+      prefer-ip-address: true

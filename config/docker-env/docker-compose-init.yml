@@ -1,0 +1,61 @@
+version: '2.2'
+services:
+  elib-eureka-server:
+    image: xkn1994/elib-eureka-server
+    container_name: elib-eureka-server
+    restart: always
+    # Environment variable need to change for example  192.168.1.31:1001 should replace by you own ip of your computer (don't change the port)
+    environment:
+      - EUREKA_SERVER=http://192.168.1.31:1001/eureka/
+    ports:
+      - "1001:1001"
+    #容器启动后，执行的命令
+    command: java -jar /app.jar
+
+
+  elib-user-client:
+    image: xkn1994/elib-user-client
+    container_name: elib-user-client
+    restart: always
+    # Environment variable need to change for example  192.168.1.31:1001 should replace by you own ip of your computer (don't change the port)
+    environment:
+      - EUREKA_SERVER=http://192.168.1.31:1001/eureka/
+      - KAFKA_HOST=192.168.1.31:9092
+    ports:
+      - "1002:1002"
+    command: java -jar /app.jar
+    depends_on:
+      - elib-eureka-server
+
+  elib-book-client:
+    image: xkn1994/elib-book-client
+    container_name: elib-book-client
+    restart: always
+    # Environment variable need to change for example  192.168.1.31:1001 should replace by you own ip of your computer (don't change the port)
+    environment:
+      - EUREKA_SERVER=http://192.168.1.31:1001/eureka/
+      - KAFKA_HOST=192.168.1.31:9092
+    ports:
+      - "1005:1005"
+    command: java -jar /app.jar
+    depends_on:
+      - elib-eureka-server
+
+
+  elib-gateway:
+    image: xkn1994/elib-gateway
+    container_name: elib-gateway
+    restart: always
+    # Environment variable need to change for example  192.168.1.31:1001 should replace by you own ip of your computer (don't change the port)
+    environment:
+      - EUREKA_SERVER=http://192.168.1.31:1001/eureka/
+      - KAFKA_HOST=192.168.1.31:9092
+      - EUREKA_USER_CLIENT=http://192.168.1.31:1002
+      - EUREKA_BOOK_CLIENT=http://192.168.1.31:1005
+    ports:
+      - "1004:1004"
+    command: java -jar /app.jar
+    depends_on:
+      - elib-eureka-server
+      - elib-book-client
+      - elib-user-client
