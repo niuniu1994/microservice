@@ -9,7 +9,6 @@ services:
       - EUREKA_SERVER=http://192.168.1.31:1001/eureka/
     ports:
       - "1001:1001"
-    #容器启动后，执行的命令
     command: java -jar /app.jar
 
 
