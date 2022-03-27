@@ -5,12 +5,12 @@ services:
     ports:
       - "2181:2181"
   kafka:
-    build: .
+    image: wurstmeister/kafka
     ports:
       - "9092:9092"
     environment:
 #      you should put your computer ip in KAFKA_ADVERTISED_HOST_NAME when test in local environment
-      KAFKA_ADVERTISED_HOST_NAME: 192.168.1.31
+      KAFKA_ADVERTISED_HOST_NAME: 192.168.1.89
       KAFKA_CREATE_TOPICS: "test:1:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:

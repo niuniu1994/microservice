@@ -1,0 +1,60 @@
+* 
+* ==> Audit <==
+* |--------------|--------------|----------|-----------------------|---------|--------------------------------|--------------------------------|
+|   Command    |     Args     | Profile  |         User          | Version |           Start Time           |            End Time            |
+|--------------|--------------|----------|-----------------------|---------|--------------------------------|--------------------------------|
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Wed, 10 Nov 2021 16:37:28 CET  | Wed, 10 Nov 2021 16:43:38 CET  |
+| kubectl      | -- get po -A | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Wed, 10 Nov 2021 16:44:22 CET  | Wed, 10 Nov 2021 16:44:39 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Tue, 30 Nov 2021 11:43:12 CET  | Tue, 30 Nov 2021 11:45:12 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Tue, 07 Dec 2021 21:48:40 CET  | Tue, 07 Dec 2021 21:48:41 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Wed, 22 Dec 2021 15:22:30 CET  | Wed, 22 Dec 2021 15:22:30 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Wed, 29 Dec 2021 02:22:02 CET  | Wed, 29 Dec 2021 02:22:03 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sun, 23 Jan 2022 13:15:21 CET  | Sun, 23 Jan 2022 13:15:21 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Tue, 25 Jan 2022 00:08:21 CET  | Tue, 25 Jan 2022 00:08:21 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Wed, 26 Jan 2022 19:04:09 CET  | Wed, 26 Jan 2022 19:04:10 CET  |
+| update-check |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Feb 2022 01:32:24 CET  | Sat, 26 Feb 2022 01:32:24 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Tue, 22 Mar 2022 23:18:55 CET  | Tue, 22 Mar 2022 23:20:42 CET  |
+| stop         |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Tue, 22 Mar 2022 23:36:58 CET  | Tue, 22 Mar 2022 23:37:41 CET  |
+| delete       | --all        | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Thu, 24 Mar 2022 23:25:48 CET  | Thu, 24 Mar 2022 23:26:19 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Fri, 25 Mar 2022 00:00:53 CET  | Fri, 25 Mar 2022 00:04:51 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 18:10:12 CET  | Sat, 26 Mar 2022 18:12:29 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 21:28:25 CET  | Sat, 26 Mar 2022 21:31:39 CET  |
+| stop         |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 21:35:58 CET  | Sat, 26 Mar 2022 21:36:22 CET  |
+| delete       |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 21:37:41 CET  | Sat, 26 Mar 2022 21:38:07 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 21:42:31 CET  | Sat, 26 Mar 2022 21:45:48 CET  |
+| stop         |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 21:46:35 CET  | Sat, 26 Mar 2022 21:46:54 CET  |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sat, 26 Mar 2022 21:47:05 CET  | Sat, 26 Mar 2022 21:48:33 CET  |
+| stop         |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sun, 27 Mar 2022 03:01:42 CEST | Sun, 27 Mar 2022 03:09:20 CEST |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sun, 27 Mar 2022 12:26:45 CEST | Sun, 27 Mar 2022 12:28:51 CEST |
+| stop         |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sun, 27 Mar 2022 13:56:27 CEST | Sun, 27 Mar 2022 13:56:39 CEST |
+| start        |              | minikube | DESKTOP-DS81E2F\fguir | v1.24.0 | Sun, 27 Mar 2022 13:56:46 CEST | Sun, 27 Mar 2022 13:59:46 CEST |
+|--------------|--------------|----------|-----------------------|---------|--------------------------------|--------------------------------|
+
+* 
+* ==> Dernier démarrage <==
+* Log file created at: 2022/03/27 17:55:30
+Running on machine: DESKTOP-DS81E2F
+Binary: Built with gc go1.17.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0327 17:55:30.507508   19500 out.go:297] Setting OutFile to fd 12 ...
+I0327 17:55:30.535784   19500 out.go:344] TERM=,COLORTERM=, which probably does not support color
+I0327 17:55:30.535784   19500 out.go:310] Setting ErrFile to fd 16...
+I0327 17:55:30.535784   19500 out.go:344] TERM=,COLORTERM=, which probably does not support color
+I0327 17:55:30.549696   19500 out.go:304] Setting JSON to false
+I0327 17:55:30.556231   19500 start.go:112] hostinfo: {"hostname":"DESKTOP-DS81E2F","uptime":15878,"bootTime":1648380652,"procs":266,"os":"windows","platform":"Microsoft Windows 11 Home","platformFamily":"Standalone Workstation","platformVersion":"10.0.22000 Build 22000","kernelVersion":"10.0.22000 Build 22000","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"7eb92e47-29e9-40c2-8934-7dabb9252da2"}
+W0327 17:55:30.556231   19500 start.go:120] gopshost.Virtualization returned error: not implemented yet
+I0327 17:55:30.561491   19500 out.go:176] * minikube v1.24.0 sur Microsoft Windows 11 Home 10.0.22000 Build 22000
+I0327 17:55:30.566244   19500 config.go:176] Loaded profile config "minikube": Driver=docker, ContainerRuntime=docker, KubernetesVersion=v1.22.3
+I0327 17:55:30.568543   19500 notify.go:174] Checking for updates...
+I0327 17:55:30.574614   19500 driver.go:343] Setting default libvirt URI to qemu:///system
+W0327 17:55:32.482244   19500 docker.go:108] docker version returned error: exit status 1
+I0327 17:55:32.488496   19500 out.go:176] * Utilisation du pilote docker basé sur le profil existant
+I0327 17:55:32.488496   19500 start.go:280] selected driver: docker
+I0327 17:55:32.488496   19500 start.go:762] validating driver "docker" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.28@sha256:4780f1897569d2bf77aafb3d133a08d42b4fe61127f06fcfc90c2c5d902d893c Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.22.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.49.2 Port:8443 KubernetesVersion:v1.22.3 ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:false default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:false ingress-dns:false istio:false istio-provisioner:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\fguir:/minikube-host}
+I0327 17:55:32.488496   19500 start.go:773] status for docker: {Installed:true Healthy:false Running:false NeedsImprovement:false Error:"docker version --format {{.Server.Os}}-{{.Server.Version}}" exit status 1: error during connect: This error may indicate that the docker daemon is not running.: Get "http://%!F(MISSING)%!F(MISSING).%!F(MISSING)pipe%!F(MISSING)docker_engine/v1.24/version": open //./pipe/docker_engine: The system cannot find the file specified. Reason:PROVIDER_DOCKER_NOT_RUNNING Fix:Start the Docker service Doc:https://minikube.sigs.k8s.io/docs/drivers/docker/}
+I0327 17:55:32.492166   19500 out.go:176] 
+W0327 17:55:32.492166   19500 out.go:241] X Fermeture en raison de PROVIDER_DOCKER_NOT_RUNNING : "docker version --format -" exit status 1: error during connect: This error may indicate that the docker daemon is not running.: Get "http://%!F(MISSING)%!F(MISSING).%!F(MISSING)pipe%!F(MISSING)docker_engine/v1.24/version": open //./pipe/docker_engine: The system cannot find the file specified.
+W0327 17:55:32.492674   19500 out.go:241] * Suggestion : Start the Docker service
+W0327 17:55:32.492674   19500 out.go:241] * Documentation: https://minikube.sigs.k8s.io/docs/drivers/docker/
+
+* 
